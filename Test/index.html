@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Site Title</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		window.onclick(initPOPUP());
+	</script>>
+
+  <!-- Wrap all page content in a page container (optional, but recommended for screen readers and iOS*) -->
+  <div id="page">
+    <header></header>
+    <main>
+      {{ Page Content }}
+      <!-- Add a button to open the popup (optional) -->
+      <button class="JPO_open">Open popup</button>
+    </main>
+    <footer></footer>
+  </div>
+
+  <!-- Add content to the popup -->
+  <div id="JPO">
+  	<p> Embreve um novo site </p>
+  </div>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+  <!-- Include jQuery Popup Overlay -->
+  <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js">
+  </script>
+
+  <script>
+
+  	// Start
+  	function initPOPUP() {
+
+  		$(document).ready(function() {
+  			$('#JPO').popup({
+  				autoopen: true,
+  			});
+  			$.fn.popup.defaults.pagecontainer = '#page'
+  		});
+
+
+
+  	}
+
+  		$(document).ready(function() {
+  			$('#JPO').popup({
+  				autoopen: true,
+  			});
+  			$.fn.popup.defaults.pagecontainer = '#page'
+  		});
+
+  </script>
+
+</body>
+</html>
